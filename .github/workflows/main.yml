@@ -1,0 +1,4 @@
+- name: Send result back to n8n
+  run: |
+    curl -X POST https://your-n8n-webhook-url \
+    -d "status=${{ job.status }}&output=$(cat output.txt)"
