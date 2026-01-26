@@ -23,7 +23,7 @@ jobs:
       - name: Notify n8n Webhook
         if: always() # Tetap kirim laporan meskipun kode error
         run: |
-          curl -X POST "URL_WEBHOOK_N8N_KAMU" \
+          curl -X POST "https://fillaramadhan.app.n8n.cloud/webhook-test/github-result" \
           -H "Content-Type: application/json" \
           -d "{
             \"status\": \"${{ steps.run_script.outcome }}\",
