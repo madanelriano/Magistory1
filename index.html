@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Video Editor</title>
+    <title>Modern Video Editor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Web Video Editor</h1>
-        <div class="editor-area">
-            <div class="video-player">
+        <header>
+            <h1>Modern Video Editor</h1>
+        </header>
+        <main class="editor-area">
+            <section class="video-player-section">
                 <video id="main-video" controls></video>
                 <input type="file" id="video-upload" accept="video/*">
-            </div>
-            <div class="timeline">
-                <!-- Video segments will be added here -->
-            </div>
-            <div class="controls">
-                <button id="play-pause">Play/Pause</button>
-                <button id="cut-segment">Cut Segment</button>
-                <button id="add-text">Add Text</button>
-                <input type="color" id="text-color" value="#ffffff">
-                <input type="text" id="text-input" placeholder="Enter text">
-                <button id="download-video">Download Video</button>
-            </div>
-        </div>
+            </section>
+            <section class="timeline-section">
+                <h2>Timeline</h2>
+                <div class="timeline" id="timeline-container">
+                    <!-- Video segments will be added here -->
+                </div>
+            </section>
+            <section class="controls-section">
+                <button id="play-pause-btn">Play/Pause</button>
+                <button id="cut-segment-btn">Cut Segment</button>
+                
+                <div class="text-overlay-controls">
+                    <input type="text" id="text-input" placeholder="Enter text for overlay">
+                    <input type="color" id="text-color" value="#ffffff">
+                    <button id="add-text-btn">Add Text</button>
+                </div>
+                <button id="download-video-btn">Download Video</button>
+            </section>
+        </main>
     </div>
     <script src="script.js"></script>
 </body>
