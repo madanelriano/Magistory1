@@ -3,46 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Online</title>
+    <title>Web Video Editor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Selamat Datang di Toko Online Kami</h1>
-        <nav>
-            <a href="#">Beranda</a>
-            <a href="#">Produk</a>
-            <a href="#">Tentang Kami</a>
-            <a href="#">Kontak</a>
-            <a href="#" id="cart-icon">Keranjang (<span id="cart-count">0</span>)</a>
-        </nav>
-    </header>
+    <div class="container">
+        <h1>Simple Web Video Editor</h1>
 
-    <main>
-        <section id="product-list">
-            <h2>Produk Kami</h2>
-            <div id="products-container">
-                <!-- Produk akan dimuat di sini oleh JavaScript -->
+        <div class="video-section">
+            <video id="videoPlayer" controls></video>
+            <input type="file" id="videoFileUpload" accept="video/*">
+        </div>
+
+        <div class="controls">
+            <button id="playPauseBtn">Play/Pause</button>
+            <input type="range" id="progressBar" value="0" min="0" max="100">
+            <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+            <button id="muteBtn">Mute</button>
+        </div>
+
+        <div class="timeline">
+            <h2>Timeline</h2>
+            <div id="timelineContainer">
+                <!-- Video segments will be added here -->
             </div>
-        </section>
+            <button id="addSegmentBtn">Add Current Frame</button>
+            <button id="exportVideoBtn">Export Video</button>
+        </div>
 
-        <section id="cart-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <h2>Keranjang Belanja</h2>
-                <div id="cart-items">
-                    <!-- Item di keranjang akan dimuat di sini oleh JavaScript -->
-                    <p>Keranjang Anda kosong.</p>
-                </div>
-                <p>Total: Rp <span id="cart-total">0</span></p>
-                <button id="checkout-button">Checkout</button>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Toko Online. All rights reserved.</p>
-    </footer>
+        <div class="effects">
+            <h2>Effects</h2>
+            <button id="grayscaleBtn">Grayscale</button>
+            <button id="sepiaBtn">Sepia</button>
+            <button id="resetEffectsBtn">Reset Effects</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
