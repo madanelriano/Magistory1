@@ -3,38 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Video Editor</title>
+    <title>Modern & Professional Webpage</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Modern Video Editor</h1>
-        </header>
-        <main class="editor-area">
-            <section class="video-player-section">
-                <video id="main-video" controls></video>
-                <input type="file" id="video-upload" accept="video/*">
-            </section>
-            <section class="timeline-section">
-                <h2>Timeline</h2>
-                <div class="timeline" id="timeline-container">
-                    <!-- Video segments will be added here -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">MyBrand</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Innovate. Create. Elevate.</h2>
+            <p>We build exceptional digital experiences that drive results.</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h3>Who We Are</h3>
+            <p>We are a passionate team of creative professionals dedicated to delivering high-quality web solutions. Our expertise spans design, development, and digital strategy, ensuring your project succeeds from concept to launch.</p>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h4>Our Mission</h4>
+                    <p>To empower businesses with cutting-edge digital presence and innovative technology.</p>
                 </div>
-            </section>
-            <section class="controls-section">
-                <button id="play-pause-btn">Play/Pause</button>
-                <button id="cut-segment-btn">Cut Segment</button>
-                
-                <div class="text-overlay-controls">
-                    <input type="text" id="text-input" placeholder="Enter text for overlay">
-                    <input type="color" id="text-color" value="#ffffff">
-                    <button id="add-text-btn">Add Text</button>
+                <div class="about-item">
+                    <h4>Our Vision</h4>
+                    <p>To be a leading partner in digital transformation, recognized for excellence and impact.</p>
                 </div>
-                <button id="download-video-btn">Download Video</button>
-            </section>
-        </main>
-    </div>
-    <script src="script.js"></script>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h3>Our Services</h3>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h4>Web Design</h4>
+                    <p>Stunning, user-friendly interfaces tailored to your brand identity.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Web Development</h4>
+                    <p>Robust and scalable web applications built with the latest technologies.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Digital Marketing</h4>
+                    <p>Strategies to boost your online visibility and engage your audience.</p>
+                </div>
+                <div class="service-item">
+                    <h4>UI/UX Consulting</h4>
+                    <p>Optimizing user experience for maximum engagement and conversion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h3>Our Work</h3>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200?text=Project+1" alt="Project 1">
+                    <h4>Project Alpha</h4>
+                    <p>A modern e-commerce platform.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200?text=Project+2" alt="Project 2">
+                    <h4>Project Beta</h4>
+                    <p>Interactive corporate website.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200?text=Project+3" alt="Project 3">
+                    <h4>Project Gamma</h4>
+                    <p>Mobile-first web application.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Get in Touch</h3>
+            <p>Ready to start your next project? Contact us today!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 MyBrand. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
