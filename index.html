@@ -1,13 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video Editor</title>
+    <title>Modern Web Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="root"></div>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo"><a href="#">Magistory</a></h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Modern Web Solutions for Your Business</h2>
+        <p>We create beautiful, responsive, and high-performing websites tailored to your needs.</p>
+        <a href="#contact" class="btn">Get Started</a>
+      </div>
+    </section>
+
+    <section id="features" class="features section-padding">
+      <div class="container">
+        <h3>Key Features</h3>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <i class="icon-responsive"></i>
+            <h4>Fully Responsive</h4>
+            <p>Your website will look great on any device, from desktops to mobile phones.</p>
+          </div>
+          <div class="feature-item">
+            <i class="icon-performance"></i>
+            <h4>High Performance</h4>
+            <p>Optimized for speed and efficiency, ensuring a smooth user experience.</p>
+          </div>
+          <div class="feature-item">
+            <i class="icon-design"></i>
+            <h4>Stunning Design</h4>
+            <p>Modern and aesthetic designs that capture your audience's attention.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section-padding bg-light">
+      <div class="container">
+        <h3>About Us</h3>
+        <div class="about-content">
+          <p>We are a team of passionate web developers and designers dedicated to building exceptional online experiences. Our mission is to help businesses grow by providing them with powerful and engaging websites.</p>
+          <p>With years of experience in the industry, we pride ourselves on delivering high-quality solutions that meet our clients' unique requirements and exceed their expectations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services section-padding">
+      <div class="container">
+        <h3>Our Services</h3>
+        <div class="service-grid">
+          <div class="service-item">
+            <h4>Web Development</h4>
+            <p>Building custom websites from scratch using the latest technologies.</p>
+          </div>
+          <div class="service-item">
+            <h4>UI/UX Design</h4>
+            <p>Creating intuitive and visually appealing user interfaces and experiences.</p>
+          </div>
+          <div class="service-item">
+            <h4>SEO Optimization</h4>
+            <p>Improving your website's visibility on search engines to attract more traffic.</p>
+          </div>
+          <div class="service-item">
+            <h4>Content Creation</h4>
+            <p>Crafting engaging and relevant content that resonates with your audience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-padding bg-light">
+      <div class="container">
+        <h3>Contact Us</h3>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5"></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2023 Magistory. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
